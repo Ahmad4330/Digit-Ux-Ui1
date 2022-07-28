@@ -1,0 +1,67 @@
+.primary-span-heading {
+  animation-name: primary-span-heading;
+  animation-duration: 0.8s;
+}
+@keyframes primary-span-heading {
+
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.primary-heading {
+  animation-name: primary-heads;
+  animation-duration: 1.2s;
+}
+@keyframes primary-heads {
+
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.primary-paragraph {
+  animation-name: primary-haed;
+  animation-duration: 1.3s;
+}
+@keyframes primary-haed {
+
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-btn{
+  animation-name: primary-haed;
+  animation-duration: 1.4s;
+}
+.hero-link{
+  animation-name: primary-haed;
+  animation-duration: 1.4s;
+}
+
+.hero-img{
+  animation-name: primary-haed;
+  animation-duration: 1.4s;
+}
+
+
+
+
+
+
