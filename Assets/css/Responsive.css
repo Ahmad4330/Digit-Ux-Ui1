@@ -39,6 +39,18 @@
     height: 60%;
     /* margin-left: 21px; */
   }
+  .carousel-button.prev {
+    left: 91rem;
+  }
+  .carousel-button.next {
+    right: 26rem;
+  }
+  .carousel-button.neext {
+    right: 55rem;
+  }
+  .carousel-button.preev {
+    left: 45rem;
+  }
 }
 
 /**************************/
@@ -84,6 +96,18 @@
   input {
     max-width: 16rem;
   }
+  .carousel-button.next {
+    right: 24rem;
+  }
+  .carousel-button.prev {
+    left: 86rem;
+  }
+  .carousel-button.neext {
+    right: 50rem;
+  }
+  .carousel-button.preev {
+    left: 42rem;
+  }
 }
 
 /**************************/
@@ -122,6 +146,18 @@
     height: 52%;
     left: 71%;
   }
+  .carousel-button.next {
+    right: 19rem;
+  }
+  .carousel-button.prev {
+    left: 76rem;
+  }
+  .carousel-button.neext {
+    right: 43rem;
+  }
+  .carousel-button.preev {
+    left: 39rem;
+  }
 }
 
 /**************************/
@@ -134,25 +170,24 @@
     font-size: 50%;
   }
   /* Mobile Navigation */
+  /*   
   .main-header {
     display: flex;
     align-items: start;
     margin-top: 1rem;
   }
   .main-menu {
-    background-color: white;
+    background-color: rgb(189, 179, 179);
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-    /* transform: translateX(100%); */
 
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 1s ease-in-out;
 
-    /* display: none; */
     opacity: 0;
 
     pointer-events: none;
@@ -163,7 +198,6 @@
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
-    /* transform: translateX(0); */
   }
   .menu-ul {
     flex-direction: column;
@@ -181,8 +215,47 @@
   }
   .open-nav .btn-mobile-nav [name="menu-outline"] {
     display: none;
+  } */
+
+  .checkbtn {
+    display: block;
   }
+  .menu-ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(228, 228, 228);
+    top: 45px;
+    left: -100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center;
+    transition: all .5s; */
+  }
+  nav ul li {
+    display: block;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    /* color: #0082e6; */
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
   /* Mobile Navigation */
+
+  .hero-heading {
+    position: inherit;
+  }
 
   .menu-btn {
     display: none;
@@ -205,8 +278,9 @@
     padding: 0 3.2rem;
   }
   .arroow {
-    height: 62%;
+    height: 69%;
     padding-left: 2rem;
+    margin-top: 2rem;
   }
   .main-header {
     max-width: 88rem;
@@ -289,7 +363,25 @@ grid-row: 5 ; */
   }
   .carousel {
     height: 134rem;
-}
+  }
+  .carousel-button.next {
+    right: 41rem;
+  }
+  .carousel-button.prev {
+    left: 25rem;
+  }
+  .preev {
+    top: 170% !important;
+  }
+  .neext {
+    top: 170% !important;
+  }
+  .carousel-button.neext {
+    right: 29rem;
+  }
+  .carousel-button.preev {
+    left: 28rem;
+  }
   /* .add-para::before {
     content: "A talented team to help you in your journey on creating usefull and easy to use product";
   } */
@@ -303,6 +395,9 @@ grid-row: 5 ; */
   html {
     font-size: 43.75%;
   }
+  .container {
+    padding: 0 1.6rem;
+  }
   /* .main-header {
     display: none;
   } */
@@ -313,6 +408,7 @@ grid-row: 5 ; */
   }
   .hero {
     height: 45rem;
+    padding: 0 1.6rem;
   }
   .hero-left-grid {
     grid-template-columns: 1fr;
@@ -440,10 +536,34 @@ grid-row: 5 ; */
     grid-template-columns: 1fr 1fr;
   }
   .testmonials {
-    height: 68rem;
+    height: 72rem;
   }
   .footers {
-    height: 32rem;
+    height: 26rem;
+  }
+  .carousel-button.next {
+    right: 9rem;
+  }
+  .team-section {
+    padding-top: 32rem;
+  }
+  .carousel {
+    height: 165rem;
+  }
+  .preev {
+    top: 75% !important;
+  }
+  .neext {
+    top: 75% !important;
+  }
+  .carousel-button.neext {
+    right: 12rem;
+  }
+  .carousel-button.preev {
+    left: 15rem;
+  }
+  .work {
+    height: 341rem;
   }
 }
 /* @media (max-width: 26.75em) { */
@@ -459,6 +579,9 @@ grid-row: 5 ; */
   }
   .primary-heading {
     font-size: 4rem;
+  }
+  .service-btn {
+    margin-top: 8.4rem;
   }
   .primary-paragraph {
     max-width: 44rem;
@@ -480,6 +603,30 @@ grid-row: 5 ; */
   .client-img {
     gap: 8rem;
   }
+  .carousel-button.next {
+    right: 4rem;
+  }
+  .team {
+    padding-top: 33rem;
+  }
+  .carousel {
+    height: 187rem;
+  }
+  .carousel-button.neext {
+    right: 8rem;
+  }
+  .preev {
+    top: 80% !important;
+  }
+  .neext {
+    top: 80% !important;
+  }
+  .testmonials {
+    height: 78rem;
+  }
+  .work {
+    height: 310rem;
+  }
 }
 
 /**************************/
@@ -493,6 +640,33 @@ grid-row: 5 ; */
   }
   .work {
     height: 338rem;
+  }
+  .carousel-button.prev {
+    left: 22rem;
+  }
+  .team {
+    padding-top: 40rem;
+  }
+  .carousel {
+    height: 189rem;
+  }
+  .hero-btn {
+    padding: 1.6rem 11.8rem;
+  }
+  .carousel-button.neext {
+    right: 6rem;
+  }
+  .carousel-button.preev {
+    left: 12rem;
+  }
+  .preev {
+    top: 98% !important;
+  }
+  .neext {
+    top: 98% !important;
+  }
+  .work {
+    height: 270rem;
   }
 }
 
@@ -713,10 +887,10 @@ grid-row: 5 ; */
     align-items: center;
     padding-left: 0;
   }
-  .process{
+  .process {
     margin-bottom: 70rem;
   }
-  .about-btn{
+  .about-btn {
     flex-direction: column;
   }
   .about-bton {
@@ -748,7 +922,7 @@ grid-row: 5 ; */
   .footers {
     height: 44rem;
   }
-  .about{
+  .about {
     margin-bottom: 35rem;
   }
 }
@@ -759,7 +933,7 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 20em) {
-  .about-btn{
+  .about-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -788,16 +962,16 @@ grid-row: 5 ; */
     1350/16 = 84.8  */
 /**************************/
 @media (max-width: 84.8em) {
-  .project-about{
+  .project-about {
     padding: 0 3.2rem;
   }
-  .project-container{
+  .project-container {
     margin: 0 auto;
   }
-  .portfolio{
+  .portfolio {
     padding: 0 3.2rem;
   }
-  .portfolio-container{
+  .portfolio-container {
     max-width: 112.6rem;
     margin: 0 auto;
   }
@@ -811,13 +985,13 @@ grid-row: 5 ; */
 @media (max-width: 80em) {
   .profofio-tittle {
     font-size: 3.4rem;
-}
-.profofio-paraa{
-  font-size: 2.1rem;
-}
-.img1{
-  width: 94%;
-}
+  }
+  .profofio-paraa {
+    font-size: 2.1rem;
+  }
+  .img1 {
+    width: 94%;
+  }
 }
 
 /**************************/
@@ -826,7 +1000,7 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 64em) {
-  html{
+  html {
     font-size: 55%;
   }
 }
@@ -837,25 +1011,28 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 48em) {
-  .portfolio-1{
+  .portfolio-1 {
     grid-template-columns: 1fr;
   }
-  .portfolio-2{
+  .portfolio-2 {
     grid-template-columns: 1fr;
   }
-  .portfolio-3{
+  .portfolio-3 {
     grid-template-columns: 1fr;
   }
-  .portfolio-text{
+  .portfolio-text {
     grid-row: 1;
   }
-  .project-list{
+  .project-list {
     grid-template-columns: 1fr 1fr;
   }
   .project-bton {
     margin-top: 4rem;
     padding: 1.6rem 15rem;
-}
+  }
+  .about-para {
+    text-align: left;
+  }
 }
 
 /**************************/
@@ -865,10 +1042,10 @@ grid-row: 5 ; */
 @media (max-width: 26.75em) {
   .portfolio-text {
     padding-top: 8rem;
-}
-.project-bton {
-  padding: 1.6rem 17.6rem;
-}
+  }
+  .project-bton {
+    padding: 1.6rem 17.6rem;
+  }
 }
 
 /**************************/
@@ -877,9 +1054,10 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 23.53em) {
-  .nav-link:link, .nav-link:visited {
+  .nav-link:link,
+  .nav-link:visited {
     font-size: 2.4rem;
-}
+  }
 }
 
 /**************************/
@@ -888,25 +1066,23 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 20em) {
-  .nav-link:link, .nav-link:visited {
+  .nav-link:link,
+  .nav-link:visited {
     font-size: 2rem;
+  }
+  .portfolio {
+    padding-top: 14rem;
+  }
+  .testmonials {
+    height: 85rem;
+  }
+  .test-btn {
+    padding-top: 4rem;
+  }
+  .footers {
+    height: 47rem;
+  }
 }
-.portfolio {
-  padding-top: 14rem;
-}
-.testmonials {
-  height: 85rem;
-}
-.test-btn {
-  padding-top: 4rem;
-}
-.footers {
-  height: 47rem;
-}
-}
-
-
-
 
 /**************************/
 /* Contact US  */
@@ -921,23 +1097,21 @@ grid-row: 5 ; */
     1350/16 = 84.8  */
 /**************************/
 @media (max-width: 84.8em) {
-  .main-form{
+  .main-form {
     padding: 0 3.2rem;
   }
   .from-container {
     max-width: 76.8rem;
     margin: 0 auto;
   }
-  .faq{
+  .faq {
     padding: 0 3.2rem;
   }
-  .faq-container{
+  .faq-container {
     max-width: 111rem;
     margin: 0 auto;
   }
 }
-
-
 
 /**************************/
 /* 1em= 16px
@@ -945,9 +1119,7 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 80em) {
-
 }
-
 
 /**************************/
 /* 1em= 16px
@@ -955,16 +1127,14 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 64em) {
-  html{
+  html {
     font-size: 56%;
   }
   .main-form::before {
-
     width: 90%;
     height: 120%;
     top: 88%;
   }
-
 }
 
 /**************************/
@@ -973,40 +1143,38 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 48em) {
-  .from{
+  .from {
     padding: 0 3.2rem;
   }
-  .formss{
+  .formss {
     max-width: 53.7rem;
     margin: 0 auto;
   }
   .main-form::before {
     top: 180%;
   }
-  .faq-container{
+  .faq-container {
     grid-template-columns: 1fr;
   }
 }
-
 
 /**************************/
 /* 1em= 16px
     428/16 = 26.75em  */
 /**************************/
 @media (max-width: 26.75em) {
-  html{
+  html {
     font-size: 50%;
   }
-  .main-form::before{
+  .main-form::before {
     display: none;
   }
   .our-servicea {
-    margin-top:0;
-}
-.project-bton {
-  padding: 1.6rem 3.6rem;
-}
-
+    margin-top: 0;
+  }
+  .project-bton {
+    padding: 1.6rem 3.6rem;
+  }
 }
 
 /**************************/
@@ -1015,7 +1183,6 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 23.53em) {
-
 }
 
 /**************************/
@@ -1024,5 +1191,4 @@ grid-row: 5 ; */
 /**************************/
 
 @media (max-width: 20em) {
-  
 }

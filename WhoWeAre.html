@@ -30,18 +30,25 @@
     <!-- /**************************/
           /* Main Header */
     /**************************/ -->
-
     <header class="main-header open-nav">
       <div class="menu-logo">
         <h2 class="Secondary-heading">Digitux</h2>
       </div>
       <div class="main-menu">
         <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </label>
           <ul class="menu-ul">
             <li><a class="nav-link" href="./index.html">Home</a></li>
             <li><a class="nav-link" href="./WhoWeAre.html">Who are We ?</a></li>
-            <li><a class="nav-link" href="./OurServices.html">Our Services</a></li>
-            <li><a class="nav-link" href="./OurProjects.html">Our Project</a></li>
+            <li>
+              <a class="nav-link" href="./OurServices.html">Our Services</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./OurProjects.html">Our Project</a>
+            </li>
             <li><a class="nav-link" href="./ContactUs.html">Contact Us</a></li>
           </ul>
         </nav>
@@ -49,12 +56,7 @@
       <div class="menu-btn">
         <button class="btn">Get a Quote</button>
       </div>
-       <!-- Mob Nav -->
-       <button class="btn-mobile-nav">
-         <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-         <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-       </button>
-    </header>
+    </header> 
         <!-- /**************************/
           /* About Us Section */
     /**************************/ -->
@@ -111,61 +113,182 @@
             You still hesitate about working with Us ? Check what They say about
             Us
           </p>
-          <div class="grid-2col">
-            <div class="grid">
-              <p class="testmonial-des">
-                Our team of digital product creators and Tch Bring Skilled will
-                take your idea to the next level and help you with your product
-              </p>
-              <figure class="figure">
-                <div class="test-img">
-                  <img
-                    src="./Assets/images/Who we are/testmonials/Ellipse 3.png"
-                    alt=""
-                    class="test-imges"
-                  />
-                </div>
-                <div class="img-detail">
-                  <ul class="lists">
-                    <li class="namee">Smail Yefssah</li>
-                    <li class="postt">CEO Innova</li>
-                  </ul>
-                </div>
-              </figure>
+
+          <section aria-label="Newest Photos">
+            <div class="carouseel" data-carousel>
+              <!-- <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+              <button class="carousel-button next" data-carousel-button="next">&#8658;</button> -->
+              <div class="team-btn">
+                <button
+                  class="bton carousel-button preev"
+                  data-carousel-button="prev"
+                >
+                  <ion-icon
+                    class="back-arrow"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </button>
+                <button
+                  class="bton carousel-button neext"
+                  data-carousel-button="next"
+                >
+                  <ion-icon
+                    class="back-arroow"
+                    name="arrow-forward-outline"
+                  ></ion-icon>
+                </button>
+              </div>
+              <ul data-slides>
+                <li class="slide" data-active>
+                  <section class="inner">
+                    <div class="grid-2col">
+                      <div class="grid">
+                        <p class="testmonial-des">
+                          111Our team of digital product creators and Tch Bring
+                          Skilled will take your idea to the next level and help
+                          you with your product
+                        </p>
+                        <figure class="figure">
+                          <div class="test-img">
+                            <img
+                              src="./Assets/images/Home/testmonials/Ellipse 3.png"
+                              alt=""
+                              class="test-imges"
+                            />
+                          </div>
+                          <div class="img-detail">
+                            <ul class="lists">
+                              <li class="name">Smail Yefssah</li>
+                              <li class="post">CEO Innova</li>
+                            </ul>
+                          </div>
+                        </figure>
+                      </div>
+                      <div class="grid grid-hide">
+                        <p class="testmonial-des">
+                          Our team of digital product creators and Tch Bring
+                          Skilled will take your idea to the next level and help
+                          you with your product
+                        </p>
+                        <figure class="figure">
+                          <div class="test-img">
+                            <img
+                              src="./Assets/images/Home/testmonials/Ellipse 4.png"
+                              alt=""
+                              class="test-imges"
+                            />
+                          </div>
+                          <div class="img-detail">
+                            <ul class="lists">
+                              <li class="name">Djamila Malak</li>
+                              <li class="post">Co-Founder RobaKabyle</li>
+                            </ul>
+                          </div>
+                        </figure>
+                      </div>
+                    </div>
+                  </section>
+                </li>
+                <li class="slide">
+                  <div class="grid-2col">
+                    <div class="grid">
+                      <p class="testmonial-des">
+                        2222 Our team of digital product creators and Tch Bring
+                        Skilled will take your idea to the next level and help
+                        you with your product
+                      </p>
+                      <figure class="figure">
+                        <div class="test-img">
+                          <img
+                            src="./Assets/images/Home/testmonials/Ellipse 3.png"
+                            alt=""
+                            class="test-imges"
+                          />
+                        </div>
+                        <div class="img-detail">
+                          <ul class="lists">
+                            <li class="name">Smail Yefssah</li>
+                            <li class="post">CEO Innova</li>
+                          </ul>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="grid grid-hide">
+                      <p class="testmonial-des">
+                        Our team of digital product creators and Tch Bring
+                        Skilled will take your idea to the next level and help
+                        you with your product
+                      </p>
+                      <figure class="figure">
+                        <div class="test-img">
+                          <img
+                            src="./Assets/images/Home/testmonials/Ellipse 4.png"
+                            alt=""
+                            class="test-imges"
+                          />
+                        </div>
+                        <div class="img-detail">
+                          <ul class="lists">
+                            <li class="name">Djamila Malak</li>
+                            <li class="post">Co-Founder RobaKabyle</li>
+                          </ul>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+                <li class="slide">
+                  <div class="grid-2col">
+                    <div class="grid">
+                      <p class="testmonial-des">
+                        3333Our team of digital product creators and Tch Bring
+                        Skilled will take your idea to the next level and help
+                        you with your product
+                      </p>
+                      <figure class="figure">
+                        <div class="test-img">
+                          <img
+                            src="./Assets/images/Home/testmonials/Ellipse 3.png"
+                            alt=""
+                            class="test-imges"
+                          />
+                        </div>
+                        <div class="img-detail">
+                          <ul class="lists">
+                            <li class="name">Smail Yefssah</li>
+                            <li class="post">CEO Innova</li>
+                          </ul>
+                        </div>
+                      </figure>
+                    </div>
+                    <div class="grid grid-hide">
+                      <p class="testmonial-des">
+                        Our team of digital product creators and Tch Bring
+                        Skilled will take your idea to the next level and help
+                        you with your product
+                      </p>
+                      <figure class="figure">
+                        <div class="test-img">
+                          <img
+                            src="./Assets/images/Home/testmonials/Ellipse 4.png"
+                            alt=""
+                            class="test-imges"
+                          />
+                        </div>
+                        <div class="img-detail">
+                          <ul class="lists">
+                            <li class="name">Djamila Malak</li>
+                            <li class="post">Co-Founder RobaKabyle</li>
+                          </ul>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="grid grid-hide">
-              <p class="testmonial-des">
-                Our team of digital product creators and Tch Bring Skilled will
-                take your idea to the next level and help you with your product
-              </p>
-              <figure class="figure">
-                <div class="test-img">
-                  <img
-                    src="./Assets/images/Who we are/testmonials/Ellipse 4.png"
-                    alt=""
-                    class="test-imges"
-                  />
-                </div>
-                <div class="img-detail">
-                  <ul class="lists">
-                    <li class="namee">Djamila Malak</li>
-                    <li class="postt">Co-Founder RobaKabyle</li>
-                  </ul>
-                </div>
-              </figure>
-            </div>
-          </div>
-          <div class="test-btn">
-            <button class="bton">
-              <ion-icon
-                name="arrow-forward-outline"
-                class="test-icon"
-              ></ion-icon>
-            </button>
-            <button class="bton">
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </button>
-          </div>
+          </section>
+
         </div>
       </div>
     </section>
@@ -246,5 +369,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      const buttons = document.querySelectorAll("[data-carousel-button]");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+          const slides = button
+            .closest("[data-carousel]")
+            .querySelector("[data-slides]");
+
+          const activeSlide = slides.querySelector("[data-active]");
+          let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+          if (newIndex < 0) newIndex = slides.children.length - 1;
+          if (newIndex >= slides.children.length) newIndex = 0;
+
+          slides.children[newIndex].dataset.active = true;
+          delete activeSlide.dataset.active;
+        });
+      });
+    </script>
 </body>
 </html>
