@@ -279,7 +279,7 @@ a.active,a:hover{
 }  */
 
 
-
+/* 
 .checkbtn{
   font-size: 30px;
   color: rgb(20, 13, 13);
@@ -291,12 +291,18 @@ a.active,a:hover{
 }
 #check{
   display: none;
-}
+} */
 
 
 
 
- 
+
+
+
+
+
+
+
 
 /**************************/
 /* Hero Section */
@@ -756,10 +762,23 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   grid-row: 3/-1;
   grid-column: 3;
 }
+
 .grid-img1 {
   width: 100%;
   padding-bottom: 0.9rem;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+.grid111 {
+  overflow: hidden;
+}
+.grid3{
+  overflow: hidden;
+}
+.grid111 img:hover{
+  transform: scale(1.1);
+}
+.grid3 img:hover{
+  transform: scale(1.1);
 }
 .work-title {
   font-family: "Poppins";
