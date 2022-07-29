@@ -5,7 +5,6 @@
 }
 body {
   color: #555;
-  overflow-x: hidden;
 }
 html {
   /* font-size: 10px; */
@@ -13,7 +12,6 @@ html {
   /* Percentage of user's browser font-size setting */
   /* 1rem = 10px */
   font-size: 62.5%;
-  /* overflow-x: hidden;btn */
 }
 
 /**************************/
@@ -705,13 +703,13 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   padding: 0;
   list-style: none;
 }
-
 .slide{
   position: absolute;
   inset: 0;
   opacity: 0;
   transition: 200ms opacity ease-in-out;
   transition-delay: 200ms;
+  list-style: none;
 }
 
 .slide > img {
@@ -748,7 +746,7 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   /* background: none; */
   border: none;
   font-size: 2.5rem;
-  top: 97%;
+  top: 78%;
   cursor: pointer;
 
 }
@@ -892,6 +890,13 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   width: 100%;
   padding-bottom: 0.9rem;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+}
+.grid111 img{
+  margin-bottom: 2rem;
+}
+.grid3 img{
+  margin-bottom: 2rem;
+  width: 102%;
 }
 .grid111 {
   overflow: hidden;
