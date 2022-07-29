@@ -153,6 +153,10 @@ html {
   line-height: 171.5%;
   color: rgba(14, 14, 44, 0.6);
 }
+.lets-talk{
+  text-decoration: none;
+}
+
 
 /* <-- ******************* --> */
 /* Aimations */
@@ -271,6 +275,7 @@ html {
     opacity: 1;
   }
 }
+
 
 
 
@@ -582,9 +587,12 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   align-items: center;
   gap: 6.6rem;
 }
-.client-img img {
+.client-img a img {
   width: 100%;
   /* height: 32px; */
+}
+.client-img1{
+width: 100%;
 }
 
 /**************************/
@@ -746,7 +754,6 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   /* background: none; */
   border: none;
   font-size: 2.5rem;
-  top: 78%;
   cursor: pointer;
 
 }
@@ -763,7 +770,9 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
 .carousel-button.prev {
   left: 96rem;
 }
-
+.team-btn{
+  top: 65rem;
+}
 .carousel-button.next {
   right: 30rem;
 }
@@ -845,6 +854,20 @@ box-shadow:inset 0 0 0 0.1rem #3b71fe;
   transition: all 0.5s;
 }
 .bton:hover{
+  background-color: #3b71fe;
+  color: white;
+}
+.btoon {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  border: 1px solid #3b71fe;
+  background-color: white;
+  color: #3b71fe;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btoon:hover{
   background-color: #3b71fe;
   color: white;
 }
@@ -973,7 +996,9 @@ height: 36rem;
   max-width: 109rem;
 }
 
-
+.test-btn{
+  top: 28rem;
+}
 
 
 
@@ -1659,6 +1684,12 @@ height: 36rem;
 .img1 {
   width: 100%;
 }
+.portfolio-imges{
+  overflow: hidden;
+}
+.portfolio-imges img:hover{
+  transform: scale(1.1);
+}
 
 /**************************/
 /* Alone Section */
@@ -1809,6 +1840,60 @@ textarea {
 .faq-left {
   padding-top: 6.4rem;
 }
+
+
+
+
+.accordion {
+  background-color: white;
+  /* color: #444; */
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  /* background-color: #ccc; */
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #3B71FE;
+  font-weight: 100;
+  font-size: 3.2rem;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion:focus::after{
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  /* background-color: #777;
+  color: rgba(14, 14, 44, 0.6); */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.acordian-para{
+  margin-top: 2rem;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 171.5%;
+background-color: white;
+}
+
+
 .faq-title {
   margin-bottom: 1.6rem;
 }
@@ -1817,12 +1902,13 @@ textarea {
   margin-bottom: 4rem;
 }
 .box1 {
-  padding: 1.9rem 0 1.9rem 2.83rem;
+  /* padding: 1.9rem 0 1.9rem 2.83rem; */
   border: 2px solid #3b71fe;
   border-radius: 4px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 3.4rem;
+  flex-direction: column;
 }
 .box2 {
   padding: 1.9rem 0 1.9rem 2.83rem;

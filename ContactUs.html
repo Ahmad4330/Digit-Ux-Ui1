@@ -60,7 +60,7 @@
         </nav>
       </div>
       <div class="menu-btn1">
-        <button class="btn">Get a Quote</button>
+        <a href="./OurServices.html"><button class="btn">Get a Quote</button></a>
       </div>
     </header>  
     <!-- /**************************/
@@ -108,27 +108,35 @@
         </div>
         <div class="faq-right">
           <div class="box1 reveal fade-bottom1-1">
-              <span class="span-title">Do You offer Software Development</span>
-              <div class="faq-icons">
-                <ion-icon name="add-outline" class="faq-icon"></ion-icon>
-              </div>
-          </div>
-          <div class="box2 reveal fade-bottom1-2">
-              <span class="span-title">Do You offer Software Development</span>
-              <p class="primary-para2 box2-para">Yes,we do offer Social Media marketing , we offer fb ads instgram ads ,google campagine , tiktok promotion ,and other social media plateforme </p>
-          </div>
-          <div class="box1 reveal fade-bottom1-3">
-            <span class="span-title">Do you Offer pack Services</span>
-            <div class="faq-icons">
-              <ion-icon name="add-outline" class="faq-icon"></ion-icon>
+            <button class="accordion span-title">Do You offer Software Development</button>
+            <div class="panel">
+              <p class="acordian-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-        </div>
-        <div class="box1 reveal fade-bottom1-4">
-          <span class="span-title">How long it take to realise a project</span>
-          <div class="faq-icons">
-            <ion-icon name="add-outline" class="faq-icon"></ion-icon>
           </div>
-      </div>
+          <div class="box1 reveal fade-bottom1-1">
+            <button class="accordion span-title">Do you offer Social Media Marketing</button>
+            <div class="panel">
+              <p class="acordian-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="box1 reveal fade-bottom1-1">
+            <button class="accordion span-title">Do you Offer pack Services</button>
+            <div class="panel">
+              <p class="acordian-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="box1 reveal fade-bottom1-1">
+            <button class="accordion span-title">How long it take to realise a project</button>
+            <div class="panel">
+              <p class="acordian-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+          <div class="box1 reveal fade-bottom1-1">
+            <button class="accordion span-title">Do You offer Software Development</button>
+            <div class="panel">
+              <p class="acordian-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -178,7 +186,7 @@
             <div class="carouseel" data-carousel>
               <div class="team-btn">
                 <button
-                  class="bton carousel-button preev reveal fade-bottom1-2"
+                  class="bton carousel-button preev test-btn  reveal fade-bottom1-2"
                   data-carousel-button="prev"
                 >
                   <ion-icon
@@ -187,7 +195,7 @@
                   ></ion-icon>
                 </button>
                 <button
-                  class="bton carousel-button neext reveal fade-bottom1-2"
+                  class="bton carousel-button neext test-btn  reveal fade-bottom1-2"
                   data-carousel-button="next"
                 >
                   <ion-icon
@@ -536,6 +544,24 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+            
+              // Accordians
+
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
     </script>
 
 </body>

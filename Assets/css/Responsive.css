@@ -447,8 +447,7 @@ grid-row: 5 ; */
   .team-btn {
     margin-top: 2.6rem;
     margin-left: 24rem;
-    display: flex;
-    gap: 4.8rem;
+    top: 120rem;
   }
   .footers {
     height: 63rem;
@@ -466,10 +465,10 @@ grid-row: 5 ; */
     height: 134rem;
   }
   .carousel-button.next {
-    right: 41rem;
+    right: 32rem;
   }
   .carousel-button.prev {
-    left: 25rem;
+    left: 9rem;
   }
   .preev {
     top: 170% !important;
@@ -641,9 +640,6 @@ grid-row: 5 ; */
   .footers {
     height: 33rem;
   }
-  .carousel-button.next {
-    right: 9rem;
-  }
   .team-section {
     padding-top: 32rem;
   }
@@ -661,6 +657,15 @@ grid-row: 5 ; */
   }
   .carousel-button.preev {
     left: 15rem;
+  }
+  .carousel-button.next {
+    right: 12rem;
+  }
+  .carousel-button.prev {
+    left: -2rem;
+  }
+  .team-btn{
+    top: 153rem;
   }
   .work {
     height: 341rem;
@@ -704,7 +709,7 @@ grid-row: 5 ; */
     gap: 8rem;
   }
   .carousel-button.next {
-    right: 4rem;
+    right: 1rem;
   }
   .team {
     padding-top: 33rem;
@@ -727,6 +732,15 @@ grid-row: 5 ; */
   .work {
     height: 310rem;
   }
+  .carousel-button.next {
+    right: 4rem;
+  }
+  .carousel-button.prev {
+    left: -2rem;
+  }
+  .team-btn{
+    top: 175rem;
+  }
 }
 
 /**************************/
@@ -742,7 +756,7 @@ grid-row: 5 ; */
     height: 338rem;
   }
   .carousel-button.prev {
-    left: 22rem;
+    left: -5rem;
   }
   .team {
     padding-top: 40rem;
@@ -755,9 +769,11 @@ grid-row: 5 ; */
   }
   .carousel-button.neext {
     right: 6rem;
+    padding-top: 0.1rem;
   }
   .carousel-button.preev {
     left: 12rem;
+    padding-top: 0.1rem;
   }
   .preev {
     top: 98% !important;
